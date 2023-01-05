@@ -1,0 +1,118 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+
+:root{
+    --card-width: 18rem;
+    --card-height: 35rem;
+    --content-font-size: 1rem;
+}
+
+body{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.sedan{ 
+    background-color: rgb(227, 136, 38);
+    width: var(--card-width);
+    height: var(--card-height);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.suvs{ 
+    background-color: rgb(0, 105, 112);
+    width: var(--card-width);
+    height: var(--card-height);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.luxury{ 
+    background-color: hsl(179, 100%, 13%);
+    width: var(--card-width);
+    height: var(--card-height);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.content{ 
+    color: rgb(242, 242, 242);
+    margin-top: 3rem;
+}
+.content h1{ 
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 3rem;
+}
+.content p{ 
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: var(--content-font-size);
+    line-height: 1.8rem;
+    word-spacing: 0.2rem;
+}
+
+
+.sedans-link{ 
+    color: rgb(227, 136, 38);
+    text-decoration: none;
+}
+
+.suv-link{ 
+    color: rgb(0, 105, 112);
+    text-decoration: none;
+}
+
+.lux-link{ 
+    color: hsl(179, 100%, 13%);
+    text-decoration: none;
+}
+
+
+.learn{
+    text-align: center;
+    font-size: 1rem; 
+    background-color: rgb(242, 242, 242);
+    padding: 1.3rem 3rem;
+    border-radius: 10rem;
+    font-family: 'Lexend Deca', sans-serif;
+    position: relative;
+    top: 7rem;  
+}
+
+
+@media (max-width: 375px){ 
+    body{ 
+        display: flex;
+        flex-direction: column;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .sedan{ 
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .luxury{ 
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
